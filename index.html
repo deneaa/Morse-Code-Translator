@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="js-title">Morse Code Translator</h1>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <h2 class="js-first-container">Input Text</h2>
+                <textarea id="inputText" placeholder="Enter text here..."></textarea>
+                <div class="button-group">
+                    <button id="pasteText">Insert Text</button>
+                    <button id="copyInputText">Copy Text</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="js-second-container">Morse Code Output</h2>
+                <textarea id="outputText" placeholder="Morse code will appear here..." readonly></textarea>
+                <div class="button-group">
+                    <button id="copyOutputText">Copy Code</button>
+                </div>
+            </div>
+        </div>
+        <button id="switchMode">Switch between Text and Morse</button>
+        
+        <div class="morse-chart">
+            <h2>Morse Code Table</h2>
+            <div class="morse-sections">
+                <div class="morse-section">
+                    <h3>Letters</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Character</th>
+                                <th>Morse Code</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>A</td><td>.-</td></tr>
+                            <tr><td>B</td><td>-...</td></tr>
+                            <tr><td>C</td><td>-.-.</td></tr>
+                            <tr><td>D</td><td>-..</td></tr>
+                            <tr><td>E</td><td>.</td></tr>
+                            <tr><td>F</td><td>..-.</td></tr>
+                            <tr><td>G</td><td>--.</td></tr>
+                            <tr><td>H</td><td>....</td></tr>
+                            <tr><td>I</td><td>..</td></tr>
+                            <tr><td>J</td><td>.---</td></tr>
+                            <tr><td>K</td><td>-.-</td></tr>
+                            <tr><td>L</td><td>.-..</td></tr>
+                            <tr><td>M</td><td>--</td></tr>
+                            <tr><td>N</td><td>-.</td></tr>
+                            <tr><td>O</td><td>---</td></tr>
+                            <tr><td>P</td><td>.--.</td></tr>
+                            <tr><td>Q</td><td>--.-</td></tr>
+                            <tr><td>R</td><td>.-.</td></tr>
+                            <tr><td>S</td><td>...</td></tr>
+                            <tr><td>T</td><td>-</td></tr>
+                            <tr><td>U</td><td>..-</td></tr>
+                            <tr><td>V</td><td>...-</td></tr>
+                            <tr><td>W</td><td>.--</td></tr>
+                            <tr><td>X</td><td>-..-</td></tr>
+                            <tr><td>Y</td><td>-.--</td></tr>
+                            <tr><td>Z</td><td>--..</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="morse-section">
+                    <h3>Numbers and Special Characters</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Character</th>
+                                <th>Morse Code</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>-----</td></tr>
+                            <tr><td>1</td><td>.----</td></tr>
+                            <tr><td>2</td><td>..---</td></tr>
+                            <tr><td>3</td><td>...--</td></tr>
+                            <tr><td>4</td><td>....-</td></tr>
+                            <tr><td>5</td><td>.....</td></tr>
+                            <tr><td>6</td><td>-....</td></tr>
+                            <tr><td>7</td><td>--...</td></tr>
+                            <tr><td>8</td><td>---..</td></tr>
+                            <tr><td>9</td><td>----.</td></tr>
+                            <tr><td>.</td><td>.--.-.</td></tr>
+                            <tr><td>,</td><td>--..--</td></tr>
+                            <tr><td>?</td><td>..--..</td></tr>
+                            <tr><td>'</td><td>.----.</td></tr>
+                            <tr><td>!</td><td>-.-.--</td></tr>
+                            <tr><td>/</td><td>-..-.</td></tr>
+                            <tr><td>(</td><td>-.--.</td></tr>
+                            <tr><td>)</td><td>-.--.-</td></tr>
+                            <tr><td>&</td><td>.-...</td></tr>
+                            <tr><td>:</td><td>---...</td></tr>
+                            <tr><td>;</td><td>-.-.-.</td></tr>
+                            <tr><td>=</td><td>-...-</td></tr>
+                            <tr><td>+</td><td>.-.-.</td></tr>
+                            <tr><td>-</td><td>-....-</td></tr>
+                            <tr><td>_</td><td>..--.-</td></tr>
+                            <tr><td>"</td><td>.-..-.</td></tr>
+                            <tr><td>$</td><td>...-..-</td></tr>
+                            <tr><td>@</td><td>.--.-.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="toastBox" id="toastBox"></div>
+    <footer>
+        <p>&copy; 2025 Morse Code Translator. <a href="https://github.com/deneaa">'deneaa'</a> on github</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/13c92439fe.js" crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+    <script src="translate.js" type="module"></script>
+    
+</body>
+</html>
